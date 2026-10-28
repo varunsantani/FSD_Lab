@@ -1,0 +1,140 @@
+
+.foodie-chat {
+    max-width: 720px;
+    margin: 32px auto;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #f0e3d6;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(40, 25, 10, 0.08);
+    color: #182b49;
+  }
+  
+  .chat-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-heading h2 {
+    margin: 0 0 6px;
+    font-size: 23px;
+  }
+  
+  .chat-heading p {
+    margin: 0;
+    color: #6b7280;
+  }
+  
+  .chat-status {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #fff0e8;
+    color: #c2410c;
+    font-size: 12px;
+  }
+  
+  .chat-status.online {
+    background: #e7f8ed;
+    color: #15803d;
+  }
+  
+  .foodie-chat label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .foodie-chat input {
+    min-width: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7dce3;
+    border-radius: 9px;
+    font: inherit;
+    outline-color: #ff6900;
+  }
+  
+  .chat-messages {
+    height: 280px;
+    overflow-y: auto;
+    margin: 16px 0;
+    padding: 12px;
+    background: #fff8f0;
+    border-radius: 12px;
+  }
+  
+  .chat-empty {
+    margin-top: 100px;
+    text-align: center;
+    color: #8b8b8b;
+  }
+  
+  .chat-message {
+    width: fit-content;
+    max-width: 85%;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: white;
+    overflow-wrap: anywhere;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .chat-message strong {
+    color: #ea580c;
+  }
+  
+  .chat-message p {
+    margin: 5px 0;
+  }
+  
+  .chat-message small {
+    color: #8b8b8b;
+  }
+  
+  .chat-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-form button {
+    border: none;
+    border-radius: 9px;
+    padding: 0 22px;
+    background: #ff6900;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .chat-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .chat-help {
+    color: #b45309;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 600px) {
+    .foodie-chat {
+      margin: 20px 12px;
+      padding: 16px;
+    }
+  
+    .chat-heading {
+      flex-direction: column;
+    }
+  
+    .chat-form button {
+      padding: 0 14px;
+    }
+  }
+  
